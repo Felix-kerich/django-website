@@ -22,4 +22,9 @@ def car5_view(request):
     return render(request, 'car5.html')
 def car6_view(request):
     return render(request, 'car6.html')
+def contacts_view(request):
+    return render(request, 'contacts.html')
+def about_view(request):
+    return render(request, 'about.html')
+
 

@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import products_view, index_view, car1_view, car6_view, car5_view, car4_view, car3_view, car2_view
+from .views import products_view, index_view, car1_view, car6_view, car5_view, car4_view, car3_view, car2_view,contacts_view,about_view
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -13,5 +13,7 @@ urlpatterns = [
     path('car4/', car4_view, name='car4'),
     path('car5/', car5_view, name='car5'),
     path('car6/', car6_view, name='car6'),
+    path('contacts/', contacts_view, name='contacts'),
+    path('about/', about_view, name='about'),
     path('', index_view, name='index'),  # Home page redirects to index.html
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

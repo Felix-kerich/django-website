@@ -13,7 +13,7 @@
         <a class="logo" href="#">SmartMoToRs<span>.</span></a>
         <ul class="menu-links">
           <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-          <li><a href="#">Home</a></li>
+          <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'products' %}">Products</a></li>
           <li><a href="https://www.google.com/maps/place/DEDAN+KIMATHI+UNIVERSITY/@-0.3950126,36.9551816,15.28z/data=!4m10!1m2!2m1!1sdkut!3m6!1s0x1828677a4955ff13:0x7ae4dae9615396a6!8m2!3d-0.3978314!4d36.9609217!15sCgRka3V0WgYiBGRrdXSSAQp1bml2ZXJzaXR5mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJDZG1adVREZEJSUkFC4AEA!16s%2Fm%2F04q3glb?entry=ttu" target="_blank">Location</a></li>
           <li><a href="{% url 'about' %}">About us</a></li>
@@ -22,17 +22,10 @@
         <span id="hamburger-btn" class="material-symbols-outlined" style="color: black;">menu</span>
       </nav>
     </header>
-
-    <section class="hero-section">
-      <div class="content">
-        <h2>Welcome to SmartMoToRs Your Premier Destination for Quality Cars!</h2>
-        <p>At SmartMoToRs, we redefine the car-buying experience, offering a curated selection of high-quality vehicles to meet every lifestyle and budget. 
+<h1 style="text-align: center; color: #79aec8;margin-top: 150px">About us</h1>
+<p style="text-align: center; color: #79aec8">At SmartMoToRs, we redefine the car-buying experience, offering a curated selection of high-quality vehicles to meet every lifestyle and budget.<br>
           Whether you're a first-time buyer or a seasoned car enthusiast, our platform provides a seamless and transparent process for finding your dream car.</p>
-        <p>Explore the world of automotive excellence at SmartMoToRs. Start your journey to finding the perfect car today!</p>
-        <button><a href="{% url 'products' %}">Visit now</a></button>
-      </div>
-    </section>
-    <script src="{% static 'javascript.js' %}"></script>
-    
-  </body>
+<p style="text-align: center; color: #79aec8">we have an Experience of 10 years now</p>
+<script src="{% static 'javascript.js' %}"></script>
+</body>
 </html>
